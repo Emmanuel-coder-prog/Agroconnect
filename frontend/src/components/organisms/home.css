@@ -1,0 +1,113 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 1200px;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #10b981, #059669, #047857);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+p.lead {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  margin-bottom: 3rem;
+  color: #e5e7eb;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.benefit {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  min-width: 200px;
+  flex: 1;
+  max-width: 250px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.benefit:hover {
+  transform: translateY(-10px);
+  background: rgba(16, 185, 129, 0.2);
+  border-color: #10b981;
+}
+
+.benefit i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: #10b981;
+}
+
+.benefit strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.benefit p {
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.cta-btn {
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    gap: 1rem;
+  }
+  
+  .benefit {
+    min-width: 150px;
+    padding: 1.5rem;
+  }
+  
+  .hero {
+    padding: 40px 20px;
+  }
+}
